@@ -202,6 +202,7 @@ const estaFechadoHoje = datasFechado.includes(dataHojeISO);
                           <button disabled={estaFechadoHoje} onClick={() => adicionarAoCarrinho(item, 'P')}>P</button>
                           <button disabled={estaFechadoHoje} onClick={() => adicionarAoCarrinho(item, 'M')}>M</button>
                           <button disabled={estaFechadoHoje} onClick={() => adicionarAoCarrinho(item, 'G')}>G</button>
+                          <button disabled={estaFechadoHoje} onClick={() => adicionarAoCarrinho(item, 'GG')}>GG</button>
                         </>
                       ) : (
                         <button disabled={estaFechadoHoje} className='btn-add-simples' onClick={() => adicionarAoCarrinho(item)}>+</button>
